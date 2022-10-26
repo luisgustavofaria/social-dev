@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components'
-
 const GlobalStyle = createGlobalStyle`
   * {
     padding: 0;
@@ -7,6 +6,12 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     font-family: 'Roboto', sans-serif;
+    color: #3A3A3A;
+  }
+  a {
+    color: #8933CD;
+    font-weight: bold;
+    text-decoration: none;
   }
 `
 
@@ -18,5 +23,4 @@ function App ({ Component, pageProps }) {
     </>
   )
 }
-
 export default App
