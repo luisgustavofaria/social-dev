@@ -1,7 +1,5 @@
 import styled from 'styled-components'
-
 const WIDTH_BREAK = '700px'
-
 const StyledFlex = styled.div`
   display: flex;
 `
@@ -18,7 +16,7 @@ const StyledImage = styled.div`
 `
 
 const StyledContainer = styled.div`
-  background-color: white;
+  background-color: ${props => props.theme.white};
   padding: 30px 50px;
   @media (min-width: ${WIDTH_BREAK}) {
     width: calc(${WIDTH_BREAK} - 100px);
@@ -30,7 +28,6 @@ const StyledContainer = styled.div`
   flex-direction: column;
   justify-content: center;
 `
-
 function ImageWithSpace ({ children, image }) {
   return (
     <StyledFlex>
