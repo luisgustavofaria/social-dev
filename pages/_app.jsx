@@ -1,7 +1,5 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
-
 import theme from '../src/theme'
-
 const GlobalStyle = createGlobalStyle`
   * {
     padding: 0;
@@ -10,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Roboto', sans-serif;
     color: ${props => props.theme.black};
+    background-color: ${props => props.theme.background};
   }
   a {
     color: ${props => props.theme.primary};
@@ -21,7 +20,6 @@ const GlobalStyle = createGlobalStyle`
     color: ${props => props.theme.primaryHover};
   }
 `
-
 function App ({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
@@ -30,5 +28,4 @@ function App ({ Component, pageProps }) {
     </ThemeProvider>
   )
 }
-
 export default App
