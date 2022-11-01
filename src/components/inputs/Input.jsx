@@ -3,27 +3,14 @@ import { useController } from 'react-hook-form'
 
 const InputContainer = styled.div`
   width: 100%;
-
-    
-          
-            
-    
-
-          
-          
-            
-    
-
-          
-    
-    @@ -37,14 +37,19 @@ const errorMessage = {
-  
 `
+
 const StyledLabel = styled.p`
   font-weight: bold;
   font-size: 14px;
   margin-bottom: 5px;
 `
+
 const StyledInput = styled.input`
   width: 100%;
   border: 1px solid ${props => props.theme.inputBorder};
@@ -36,11 +23,13 @@ const StyledInput = styled.input`
     outline: none;
   }
 `
+
 const ErrorLabel = styled.span`
   color: ${props => props.theme.error};
   font-weight: bold;
   font-size: 14px;
 `
+
 const errorMessage = {
   'string.empty': 'Este campo é obrigatório.',
   'string.email': 'Por favor, digite um e-mail válido.'
